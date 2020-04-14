@@ -125,3 +125,35 @@ const data = [
   //create span
   //add class to span
   //add h2, paragraphs, and span to outer div in order ---- .appendChild
+
+/* component structure
+  <div class="article">
+    <h2>{title of the article}</h2>
+    <p class="date">{date of the article}</p>
+
+    {three separate paragraph elements}
+
+    <span class='expandButton'></span>
+  </div>
+*/
+
+function componentConstructor() {
+  //create outer div
+  const article = document.createElement('div');
+
+  //create h2
+  const articleTitle = document.createElement('h2');
+
+  //create date paragraph
+  const date = document.createElement('p');
+
+  //create three paragraphs
+  const paragraph1 = document.createElement('p');
+
+  const paragraph2 = document.createElement('p');
+
+  const paragraph3 = document.createElement('p');
+
+  //create span
+  const expandButton = document.createElement('span');
+}
