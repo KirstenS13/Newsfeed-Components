@@ -140,12 +140,14 @@ const data = [
 function componentConstructor() {
   //create outer div
   const article = document.createElement('div');
+  article.classList.add('article');
 
   //create h2
   const articleTitle = document.createElement('h2');
 
   //create date paragraph
   const date = document.createElement('p');
+  date.classList.add('date');
 
   //create three paragraphs
   const paragraph1 = document.createElement('p');
@@ -156,4 +158,5 @@ function componentConstructor() {
 
   //create span
   const expandButton = document.createElement('span');
+  expandButton.classList.add('expandButton');
 }
