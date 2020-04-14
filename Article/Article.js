@@ -137,29 +137,29 @@ const data = [
   </div>
 */
 
-function componentConstructor(titleData, dateData, para1Data, para2Data, para3Data) {
+function articleComponentConstructor(articleObj) {
   //create outer div
   const article = document.createElement('div');
   article.classList.add('article');
 
   //create h2
   const articleTitle = document.createElement('h2');
-  articleTitle.textContent(titleData);
+  articleTitle.textContent(articleObj.title);
 
   //create date paragraph
   const articleDate = document.createElement('p');
   articleDate.classList.add('date');
-  articleDate.textContent(dateData);
+  articleDate.textContent(articleObj.date);
 
   //create three paragraphs
   const paragraph1 = document.createElement('p');
-  paragraph1.textContent(para1Data);
+  paragraph1.textContent(articleObj.firstParagraph);
 
   const paragraph2 = document.createElement('p');
-  paragraph2.textContent(para2Data);
+  paragraph2.textContent(articleObj.secondParagraph);
 
   const paragraph3 = document.createElement('p');
-  paragraph3.textContent(para3Data);
+  paragraph3.textContent(articleObj.thirdParagraph);
 
   //create span
   const expandButton = document.createElement('span');
@@ -185,4 +185,7 @@ function componentConstructor(titleData, dateData, para1Data, para2Data, para3Da
   return article;
 }
 
-console.log('This is a test');
+data.forEach((articleObj) => {
+  const articleComponent = articleComponentConstructor(articleObj);
+  articles.appendChild(articleComponent);
+})
