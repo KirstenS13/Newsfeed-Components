@@ -112,3 +112,16 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+
+//My code................
+//pseudocode
+//To create html structure
+  //create outer div
+  //add class to that div
+  //create h2
+  //create 4 paragraphs
+  //add any necessary classes
+  //create span
+  //add class to span
+  //add h2, paragraphs, and span to outer div in order ---- .appendChild
