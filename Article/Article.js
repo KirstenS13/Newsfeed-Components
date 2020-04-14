@@ -137,26 +137,47 @@ const data = [
   </div>
 */
 
-function componentConstructor() {
+function componentConstructor(titleData, dateData, para1Data, para2Data, para3Data) {
   //create outer div
   const article = document.createElement('div');
   article.classList.add('article');
 
   //create h2
   const articleTitle = document.createElement('h2');
+  articleTitle.textContent(titleData);
 
   //create date paragraph
-  const date = document.createElement('p');
-  date.classList.add('date');
+  const articleDate = document.createElement('p');
+  articleDate.classList.add('date');
+  articleDate.textContent(dateData);
 
   //create three paragraphs
   const paragraph1 = document.createElement('p');
+  paragraph1.textContent(para1Data);
 
   const paragraph2 = document.createElement('p');
+  paragraph2.textContent(para2Data);
 
   const paragraph3 = document.createElement('p');
+  paragraph3.textContent(para3Data);
 
   //create span
   const expandButton = document.createElement('span');
   expandButton.classList.add('expandButton');
+
+  //add inner elements to the article div
+  article.appendChild(articleTitle);
+  article.appendChild(articleDate);
+  article.appendChild(paragraph1);
+  article.appendChild(paragraph2);
+  article.appendChild(paragraph3);
+  article.appendChild(expandButton);
+
+  //check that I added everything correctly
+  console.log(article);
+
+  //return article component
+  return article;
 }
+
+console.log('This is a test');
