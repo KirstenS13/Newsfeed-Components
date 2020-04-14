@@ -176,6 +176,11 @@ function componentConstructor(titleData, dateData, para1Data, para2Data, para3Da
   //check that I added everything correctly
   console.log(article);
 
+  //add event listener to expandButton
+  expandButton.addEventListener('click', (event) => {
+    article.classList.toggle('article-open');
+  })
+
   //return article component
   return article;
 }
