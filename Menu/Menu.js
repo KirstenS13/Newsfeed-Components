@@ -64,9 +64,17 @@ function menuComponentConstructor(menuDataArr) {
   menuDataArr.forEach((menuItem) => {
     //create li element for each item in array
     const menuListItem = document.createElement('li');
-    menuListItem.textContent = 'menuItem';
+    menuListItem.textContent = menuItem;
 
     //add each li element to ul element
     menuListContainer.appendChild(menuListItem);
+  })
+
+  //select .menu-button element
+  const menuButton = document.querySelector('.menu-button');
+
+  //add event listener to menuButton
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('menu--open');
   })
 }

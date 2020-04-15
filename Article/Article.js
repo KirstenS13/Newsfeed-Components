@@ -186,7 +186,7 @@ function articleComponentConstructor(articleObj) {
   console.log(article);
 
   //add event listener to expandButton
-  expandButton.addEventListener('click', (event) => {
+  expandButton.addEventListener('click', () => {
     article.classList.toggle('article-open');
     //console.log('Click!');
   })
