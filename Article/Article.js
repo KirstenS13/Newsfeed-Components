@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  }, //My new article object
+  {
+    title: 'Daleks!',
+    date: 'Apr 14, 2020',
+    firstParagraph: 'Time War Geronimo Dalekanium Demon\'s Run Cult of Skaro ninehundred Allons-y, Alonso! Bow ties are cool You will be exterminated! Time War Donna Noble I really hate stairs. EXTERMINATE ALL STAIRCASES! EXTERMINATE! Time War Dalekanium.',
+    secondParagraph: 'There are fixed points throughout time where things must stay exactly the way they are. This is not one of them. This is an opportunity! Whatever happens here will create its own timeline, its own reality, a temporal tipping point. The future revolves around you, here, now, so do good! Frightened people. Give me a Dalek any day. Overconfidence, this, and a small screwdriver. I’m absolutely sorted. Oh, I always rip out the last page of a book. Then it doesn\'t have to end. I hate endings! It\'s a fez. I wear a fez now. Fezzes are cool.',
+    thirdParagraph: 'I\'m the Doctor, I can save the world with a kettle and some string! And look! I\'m wearing a vegetable! You need to get yourself a better dictionary. When you do, look up \'genocide\'. You\'ll find a little picture of me there, and the caption\'ll read \'Over my dead body\'. Black tie...Whenever I wear this, something bad always happens. Yeah? Well I\'m the Lord of Time. Don\'t you think she looks tired? Oh, yes. Harmless is just the word: that\'s why I like it! Doesn\'t kill, doesn\'t wound, doesn\'t maim. But I\'ll tell you what it does do: it is very good at opening doors!'
   }
 ];
 
