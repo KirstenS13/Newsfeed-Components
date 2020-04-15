@@ -70,6 +70,9 @@ function menuComponentConstructor(menuDataArr) {
     menuListContainer.appendChild(menuListItem);
   })
 
+  //append ul element to menu div
+  menu.appendChild(menuListContainer);
+
   //select .menu-button element
   const menuButton = document.querySelector('.menu-button');
 
@@ -77,4 +80,15 @@ function menuComponentConstructor(menuDataArr) {
   menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu--open');
   })
+
+  //select header element
+  const header = document.querySelector('.header');
+
+  //add menu to header
+  header.appendChild(menu);
+
+  //return menu component
+  return menu;
 }
+
+menuComponentConstructor(menuItems);

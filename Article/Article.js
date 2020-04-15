@@ -182,18 +182,10 @@ function articleComponentConstructor(articleObj) {
   article.appendChild(paragraph3);
   article.appendChild(expandButton);
 
-  //check that I added everything correctly
-  console.log(article);
-
   //add event listener to expandButton
   expandButton.addEventListener('click', () => {
     article.classList.toggle('article-open');
-    //console.log('Click!');
   })
-  // expandButton.addEventListener('click', function() {
-  //   article.classList.toggle('article-open');
-  //   console.log('Click!');
-  // })
 
   //return article component
   return article;
