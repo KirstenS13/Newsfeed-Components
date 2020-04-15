@@ -185,6 +185,10 @@ function articleComponentConstructor(articleObj) {
   return article;
 }
 
+//select articles div
+const articles = document.querySelector('.articles');
+
+//map over the array to create a new component for each object
 data.forEach((articleObj) => {
   const articleComponent = articleComponentConstructor(articleObj);
   articles.appendChild(articleComponent);
