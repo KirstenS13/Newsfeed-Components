@@ -179,7 +179,12 @@ function articleComponentConstructor(articleObj) {
   //add event listener to expandButton
   expandButton.addEventListener('click', (event) => {
     article.classList.toggle('article-open');
+    //console.log('Click!');
   })
+  // expandButton.addEventListener('click', function() {
+  //   article.classList.toggle('article-open');
+  //   console.log('Click!');
+  // })
 
   //return article component
   return article;
