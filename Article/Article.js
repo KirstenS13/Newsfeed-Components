@@ -171,6 +171,8 @@ function articleComponentConstructor(articleObj) {
   //create span
   const expandButton = document.createElement('span');
   expandButton.classList.add('expandButton');
+  //adding text to the span so that the paragraphs will show
+  expandButton.textContent = '...';
 
   //add inner elements to the article div
   article.appendChild(articleTitle);
