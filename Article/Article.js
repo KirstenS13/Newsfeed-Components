@@ -144,22 +144,22 @@ function articleComponentConstructor(articleObj) {
 
   //create h2
   const articleTitle = document.createElement('h2');
-  articleTitle.textContent(articleObj.title);
+  articleTitle.textContent = articleObj.title;
 
   //create date paragraph
   const articleDate = document.createElement('p');
   articleDate.classList.add('date');
-  articleDate.textContent(articleObj.date);
+  articleDate.textContent = articleObj.date;
 
   //create three paragraphs
   const paragraph1 = document.createElement('p');
-  paragraph1.textContent(articleObj.firstParagraph);
+  paragraph1.textContent = articleObj.firstParagraph;
 
   const paragraph2 = document.createElement('p');
-  paragraph2.textContent(articleObj.secondParagraph);
+  paragraph2.textContent = articleObj.secondParagraph;
 
   const paragraph3 = document.createElement('p');
-  paragraph3.textContent(articleObj.thirdParagraph);
+  paragraph3.textContent = articleObj.thirdParagraph;
 
   //create span
   const expandButton = document.createElement('span');
