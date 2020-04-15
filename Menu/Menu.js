@@ -51,12 +51,22 @@ let menuItems = [
   </div>
 */
 
+//Component constructor function
 function menuComponentConstructor(menuDataArr) {
   //create menu(outer) div
   const menu = document.createElement('div');
+  menu.classList.add('menu');
 
   //create ul element
   const menuListContainer = document.createElement('ul');
 
-  
+  //iterate over array
+  menuDataArr.forEach((menuItem) => {
+    //create li element for each item in array
+    const menuListItem = document.createElement('li');
+    menuListItem.textContent = 'menuItem';
+
+    //add each li element to ul element
+    menuListContainer.appendChild(menuListItem);
+  })
 }
